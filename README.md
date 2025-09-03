@@ -1,21 +1,26 @@
-# python-oop-project-a4
-This project was developed as part of COMP 202 (Foundations of Programming) at McGill University. 
+# Python QR Code Validator — COMP 202
 
-# Python OOP Project — COMP 202
-This project applies Object-Oriented Programming (OOP) concepts to solve problems using **Python classes, methods, and file I/O**.
+This project was developed as part of COMP 202 (Foundations of Programming) at McGill University.  
+It implements a **QR Code validation system** in Python using Object-Oriented Programming.
 
 ## Highlights
-- Implemented custom classes with constructors, attributes, and methods.
-- Worked with **lists, dictionaries, and strings** to process and store structured data.
-- Added **file input/output** to read/write persistent data.
-- Designed error handling using **exceptions** for robust program behavior.
-- Documented all functions with **docstrings** including type contracts and examples.
+- Implemented `helper.py` with utility functions:
+  - `convert_date` for parsing and validating date strings.
+  - `get_data` for reading binary QR code data from text files.
+- Implemented `txtdata.py` with a `TxtData` class:
+  - Stores and manipulates 2D QR data.
+  - Includes methods for pixel counting, equality checks, and exporting a “pretty” QR code.
+- Implemented `qrcode.py` with a `QRCode` class:
+  - Stores QR metadata (owner, last update date, error correction).
+  - Includes methods to validate corruption and compare QR codes.
+- Applied **file input/output, exception handling, and modular OOP design**.
 
 ## Tech
 - **Python 3**
-- Object-Oriented Programming
-- Lists, dictionaries, strings
-- File I/O, exceptions
+- Object-Oriented Programming (OOP)
+- File I/O and exception handling
+- Nested lists & dictionaries
 
 ## Notes
-- This repo contains only my authored Python files (assignment starter code and instructions excluded per course policy).
+- This repo includes only my authored Python files (`helper.py`, `txtdata.py`, `qrcode.py`).  
+- Assignment test data (`.txt` files) and instructions are excluded per course policy.
